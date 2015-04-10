@@ -84,7 +84,7 @@ order-to-fill ratios.
 
 Many places in quantstrat apply arguments passed in the strategy specification, 
 the parameters list, or in \code{...} to an indicator, signal, or rule function.  
-These arguments are matched in this order, with the last math overriding.
+These arguments are matched in this order, with the last match overriding.
 Specifically, this order is:
 
 \enumerate{

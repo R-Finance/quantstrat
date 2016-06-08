@@ -166,7 +166,7 @@ walk.forward <- function(strategy.st, paramset.label, portfolio.st, account.st,
 
         if(!is.null(.audit))
         {
-            save(.audit, file=paste(audit.prefix, symbol.st, index(symbol[training.start]), index(symbol[training.end]), 'RData', sep='.'))
+            save(.audit, file=paste(audit.prefix, symbol.st, as.Date(index(symbol[training.start])), as.Date(index(symbol[training.end])), 'RData', sep='.'))
 
             .audit <- NULL
         }
